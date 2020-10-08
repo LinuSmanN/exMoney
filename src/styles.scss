@@ -1,0 +1,166 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  color: #222222;
+}
+
+// Flags
+
+span.flag {
+	width: 44px;
+	height: 30px;
+	display: inline-block
+}
+
+img.flag {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  margin-right: 10px;
+}
+
+.flag {
+	background: url('assets/Images/flags_responsive.png');
+	background-size: 100%;
+	vertical-align: middle;
+}
+
+.flag-aud {
+	background-position: 0 5.785124%
+}
+
+.flag-bgn {
+	background-position: 0 9.090909%
+}
+
+.flag-brl {
+	background-position: 0 11.983471%
+}
+
+.flag-cad {
+	background-position: 0 14.876033%
+}
+
+.flag-chf {
+	background-position: 0 16.942149%
+}
+
+.flag-cny {
+	background-position: 0 19.008264%
+}
+
+.flag-czk {
+	background-position: 0 21.900826%
+}
+
+.flag-dkk {
+	background-position: 0 23.140496%
+}
+
+.flag-eur {
+	background-position: 0 26.446281%
+}
+
+.flag-gbp {
+	background-position: 0 33.884298%
+}
+
+.flag-hkd {
+	background-position: 0 37.190083%
+}
+
+.flag-hrk {
+	background-position: 0 38.429752%
+}
+
+.flag-huf {
+	background-position: 0 39.256198%
+}
+
+.flag-idr {
+	background-position: 0 39.669421%
+}
+
+.flag-ils {
+	background-position: 0 40.495868%
+}
+
+.flag-inr {
+	background-position: 0 40.909091%
+}
+
+.flag-isk {
+	background-position: 0 42.561983%
+}
+
+.flag-jpy {
+	background-position: 0 44.214876%
+}
+
+.flag-krw {
+	background-position: 0 47.520661%
+}
+
+.flag-mxn {
+	background-position: 0 61.570248%
+}
+
+.flag-myr {
+	background-position: 0 61.983471%
+}
+
+.flag-nok {
+	background-position: 0 65.702479%
+}
+
+.flag-nzd {
+	background-position: 0 67.355372%
+}
+
+.flag-php {
+	background-position: 0 69.834711%
+}
+
+.flag-pln {
+	background-position: 0 70.661157%
+}
+
+.flag-ron {
+	background-position: 0 74.380165%
+}
+
+.flag-rub {
+	background-position: 0 75.206612%
+}
+
+.flag-sek {
+	background-position: 0 77.68595%
+}
+
+.flag-sgd {
+	background-position: 0 78.099174%
+}
+
+.flag-thb {
+	background-position: 0 85.950413%
+}
+
+.flag-try {
+	background-position: 0 89.256198%
+}
+
+.flag-usd {
+	background-position: 0 93.38843%
+}
+
+.flag-zar {
+	background-position: 0 98.760331%
+}

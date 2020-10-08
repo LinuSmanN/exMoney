@@ -1,0 +1,103 @@
+.exchange {
+  padding-top: 150px;
+  .title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .body {
+    margin: 0 auto;
+    padding: 25px 20px;
+    width: 446px;
+    border-radius: 10px;
+    background-color: #f2f5fb;
+    .dropinput {
+      label {
+        display: block;
+        font-weight: 700;
+      }
+      .btn-group {
+        background-color: #fff;
+        .btn-group {
+          .cusBt {
+            position: relative;
+            border: 1px solid #c4c8d2;
+            border-right: 0;
+            min-width: 150px;
+            min-height: 45px;
+            &::after {
+              position: absolute;
+              top: 45%;
+              right: 10px;
+            }
+          }
+          .dropdown-menu {
+            height: 250px;
+            overflow-x: auto;
+            span {
+              vertical-align: text-top;
+            }
+          }
+        }
+      }
+      .cusIn {
+        text-align: start;
+        font-weight: 700;
+        border: 1px solid #c4c8d2;
+        cursor: text;
+        &::placeholder {
+          font-weight: 700;
+        }
+      }
+    }
+    .rate-line {
+      position: relative;
+      padding-left: 35px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 3px;
+        left: 18px;
+        color: #c4c8d2;
+        border-right: 1px solid;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        bottom: 5px;
+        left: 13px;
+        color: #c4c8d2;
+        border-top: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 0;
+        border-left: 0;
+        transform: rotate(135deg);
+      }
+      .rate {
+        margin: 45px 0;
+        min-height: 45px;
+        width: 100%;
+        text-align: start;
+        border: 1px solid #c4c8d2;
+        background-color: #fff;
+        span {
+          margin-right: 25px;
+          font-weight: 700;
+          border-bottom: 1px dashed;
+        }
+        small {
+          font-size: 18px;
+          font-weight: 700;
+          color: #6c767e;
+        }
+      }
+    }
+  }
+}
+
+.vAlign {
+  vertical-align: sub;
+}

@@ -1,0 +1,38 @@
+<div class="exchange">
+  <div class="container">
+    <h1 class="title">Currency exchange</h1>
+    <div class="body">
+      <div class="dropinput">
+        <label>You pay</label>
+        <div class="btn-group mr-3">
+          <div class="btn-group" ngbDropdown role="group">
+            <button class="btn cusBt" ngbDropdownToggle (openChange)="getRate()">{{fromCode}}</button>
+            <div class="dropdown-menu" ngbDropdownMenu>
+              <button ngbDropdownItem *ngFor="let item of currencies" (click)="onChangeSum(item.code, 'from')">
+                <img src="../../../../../assets/flag_placeholder.png" [class]="'flag flag-' + item.code.toLowerCase()">
+                <span>{{item.code}}</span>
+              </button>
+            </div>
+          </div>
+          <input class="btn cusIn" type="number" [(ngModel)]="summ" (keyup)="conVert()">
+        </div>
+      </div>
+      <div class="rate-line"><div class="rate btn"><span class="vAlign">Exchange rate</span><small class="vAlign">{{rate}}</small></div></div>
+      <div class="dropinput">
+        <label>Go Media will get</label>
+        <div class="btn-group mr-3">
+          <div class="btn-group" ngbDropdown role="group">
+            <button class="btn cusBt" ngbDropdownToggle (openChange)="getRate()">{{toCode}}</button>
+            <div class="dropdown-menu" ngbDropdownMenu>
+              <button ngbDropdownItem *ngFor="let item of currencies" (click)="onChangeSum(item.code, 'to')">
+                <img src="../../../../../assets/flag_placeholder.png" [class]="'flag flag-' + item.code.toLowerCase()">
+                <span>{{item.code}}</span>
+              </button>
+            </div>
+          </div>
+          <input class="btn cusIn" type="number" [(ngModel)]="result">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
